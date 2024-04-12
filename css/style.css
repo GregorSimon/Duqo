@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.rotating-text {
+  position: fixed;
+  font-size: 70px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  animation: rotateText 5s linear infinite;
+  color: crimson;
+  z-index: 100;
+}
+
+@media (max-with:900px){
+  .rotating-text {
+    position: fixed;
+    font-size: 40px;
+  }
+}
+@keyframes rotateText {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.
